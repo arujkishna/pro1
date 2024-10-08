@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Working_login/style.css">
+</head>
+<body>
+<div class="form-holder">
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <!-- user register form start -->
+            <form id="registerForm">
+                <h1>Create Account</h1>
+                <span> use your email for registration</span>
+                <input type="text" placeholder="First Name" id="fnameInp"/>
+                <input type="text" placeholder="Last Name" id="lnameInp"/>
+                <input type="email" placeholder="Email" id="emailInp" />
+                <input type="password" placeholder="Password" id="passwordInp" />
+                <button type="submit" id="register-btn">Sign Up</button>
+            </form>
+            <!-- user register form End -->
+        </div>
+        <div class="form-container sign-in-container">
+<!-- user login form Start-->           
+            <form id="loginForm">
+                <h1>Sign in</h1>
+                <span>use your account</span>
+                <input type="email" placeholder="Email" id="login-email" />
+                <input type="password" placeholder="Password" id="login-password" />
+                <a href="#">Forgot your password?</a>
+                <button id="login-btn" type="submit">Sign In</button>
+            </form>
+<!-- user login form End -->
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/Working_login/userAuth.js"></script>
+<script type="module" src="/Working_login/login.js"></script>
+<script type="module" src="/Working_login/signUp.js"></script>
+</body>
+</html>
