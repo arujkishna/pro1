@@ -11,13 +11,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opactiy:0.1;
+    
 }
 .box{
     width: 55vw;
     height: 60vh;
     background-color: rgba(137, 43, 226, 0.6);
     border-radius:10px;
-    box-shadow: 20px -20px 140px rgba(212, 10, 10, 0.473);
+    box-shadow: 20px -10px 140px rgba(212, 10, 10, 0.473);
    display: flex;
    flex-flow: column;
    align-items: center;
@@ -25,7 +27,7 @@
  
 }
 .box :hover{
-    background-color: rgba(0, 0, 0, 0.408);
+    background-color: black;
 }
 .box :active{
     background-color: pink;
